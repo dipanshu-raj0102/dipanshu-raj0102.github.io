@@ -10,7 +10,7 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     width:340px;
     border-style: solid;
@@ -35,8 +35,8 @@ img{
     width:80px;
     border-radius: 5px;
     justify-content: center;
-    align-items: center;  
-    font-weight: 1000;    
+    align-items: center;
+    font-weight: 1000;
 }
 #date{
     padding-top: 10px;
@@ -66,9 +66,9 @@ img{
 }
 #profile > img{
     width:30px;
+
 }
 #profile > p{
     font-weight: 800;
     padding-left: 10px;
 }
-   
