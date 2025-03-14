@@ -1,74 +1,61 @@
 body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color:  hsl(47, 88%, 63%);
+    background-color: hsl(0, 0%, 8%);
 }
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+
 #container{
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    width:340px;
-    border-style: solid;
-    border-radius: 20px;
-    box-shadow: 10px 10px ;
+    width: 280px;
+    padding:20px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius:10px;
 }
-img{
-    border-radius: 10px;
-}
-#superset{
+#header{
     display:flex;
     flex-direction:column;
-    width:340px;
-    padding-top:20px;
-    justify-content: center;
-}
-#box{
-    display: flex;
-    background-color:hsl(47, 88%, 63%);
-    box-sizing: border-box;
-    height: 30px;
-    width:80px;
-    border-radius: 5px;
     justify-content: center;
     align-items: center;
-    font-weight: 1000;
 }
-#date{
-    padding-top: 10px;
+#header > img{
+    border-radius:50%;
+    width:50%;
+}
+#header > h1{
+    color:white;
+    font-size:25px;
     font-weight: 600;
 }
-#heading{
-    display : flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 14px;
-    height: 40px;
-    width: 340px;
-    padding-top:10px;
+#header > p{
+    color:hsl(75, 94%, 57%);
+    position:absolute;
+    padding-top:150px;
+    font-size:15px;
 }
 #text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    font-size: 17px;
+    padding-top: 20px;
+    font-size:15px;
+    color: white;
 }
-#profile{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:340px;
-}
-#profile > img{
-    width:30px;
 
+ul{
+    list-style:none;
+    text-align: center;
+    align-items: center;
 }
-#profile > p{
-    font-weight: 800;
-    padding-left: 10px;
+li{
+    background-color: hsl(0, 0%, 20%);
+    padding:10px;
+    margin:15px;
+    margin-right:51px;
+    border-radius:10px;
+    width:250px;
+    color:white;
 }
