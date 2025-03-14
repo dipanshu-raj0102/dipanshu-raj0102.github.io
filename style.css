@@ -13,7 +13,7 @@ main{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    width: 280px;
+    width: 300px;
     padding:20px;
     background-color: hsl(0, 0%, 12%);
     border-radius:10px;
@@ -45,17 +45,22 @@ main{
     color: white;
 }
 
-ul{
-    list-style:none;
-    text-align: center;
+#navigation{
+    display:flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
 }
+
 li{
     background-color: hsl(0, 0%, 20%);
-    padding:10px;
-    margin:15px;
-    margin-right:51px;
     border-radius:10px;
-    width:250px;
     color:white;
+
+    width:250px;
+    margin:10px;
+    padding:15px;
+    list-style: none;
+    text-align: center;
 }
